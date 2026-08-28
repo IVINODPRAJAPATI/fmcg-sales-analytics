@@ -33,7 +33,20 @@ Built and compared two models to predict `units_sold` using category, channel, r
 ## Tools Used
 Python, Pandas, NumPy, Scikit-learn (Linear Regression, Decision Tree Regressor), Jupyter Notebook
 
+## Dashboard
+Built an interactive Streamlit dashboard (`dashboard.py`) visualizing:
+- Monthly sales trend (line chart)
+- Sales by category (bar chart)
+- Promotion effect: average units sold with vs. without promotion (bar chart)
+- A region filter (dropdown) that dynamically updates all three charts
+
+**To run the dashboard locally:**
+```
+pip install streamlit plotly
+streamlit run dashboard.py
+```
+
 ## Next Steps
-- Build an interactive Streamlit/Plotly dashboard to visualize these trends
 - Explore K-Means clustering to segment products or regions by sales pattern
 - Investigate promotion effect further, controlling for category (to check whether the effect holds within each category, not just overall)
+- Deploy the dashboard (e.g., via Streamlit Community Cloud) for a live, shareable link
